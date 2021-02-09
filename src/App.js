@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import About from './components/pages/About';
-// import Blog from './components/pages/Blog';
-// import SignUp from './components/pages/SignUp';
+import Login from './components/pages/Login';
+import SignUp from './components/pages/SignUp';
+
 
 function App() {
   return (
@@ -15,13 +15,15 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           
-          {/* <Route path='/blog' component={Login} />
-          <Route path='/blog' component={My Profile} /> // authentication needed doesn't show up until user is logged in
-          <Route path='/sign-up' component={SignUp} /> */}
+          <Route path='/login' component={Login} />
+      
+          <Route path='/sign-up' component={SignUp} />
+
+          
+          
         </Switch>
       </Router>
     </>
   );
-}
-
+};
 export default App;
