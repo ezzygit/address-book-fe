@@ -1,31 +1,34 @@
 .navbar {
-    background: linear-gradient(90deg, #ffffff 0%, #242424 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(36,36,36,0.7) 100%);
+    position: absolute;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: top;
     top: 0;
+    left: 0;
     z-index: 999;
   
   }
   
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
+    width: 100vw;
     object-fit: contain;
 
   }
 
 
   .gradient-text {
-    font-size: 95px;
-    background-color: #ffffff;
-    background-image: linear-gradient(90deg, #242424 0%, whitesmoke 100%);
+    font-size: 5rem;
+    text-align: left;
+    background-color: #000000;
+    text-shadow:  -4px 4px #ffffff;
+    /* background-image: linear-gradient(90deg, #242424 0%, whitesmoke 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
