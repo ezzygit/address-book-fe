@@ -30,7 +30,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <h1 className="gradient-text">DABOOK </h1>
-            <i class="far fa-address-book fa-2x"></i>
             
           </Link>
           <div className='menu-icon' onClick={handleClick}>

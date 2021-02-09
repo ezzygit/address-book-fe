@@ -1,7 +1,7 @@
 
   .main-container {
     background-image: url(../images/addressbookimg.jpeg);
-
+    background-repeat: no-repeat !important;
     color:white;
     height: 100vh;
     width: 100%;
@@ -10,7 +10,9 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
 
   }
   
@@ -21,6 +23,7 @@
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+  
   }
   
   .main-container > p {
