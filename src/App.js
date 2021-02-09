@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import About from './components/pages/About';
+// import Blog from './components/pages/Blog';
+// import SignUp from './components/pages/SignUp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          
+          {/* <Route path='/blog' component={Login} />
+          <Route path='/blog' component={My Profile} /> // authentication needed doesn't show up until user is logged in
+          <Route path='/sign-up' component={SignUp} /> */}
+        </Switch>
+      </Router>
+    </>
   );
 }
 
