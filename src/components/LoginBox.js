@@ -22,18 +22,18 @@ const LoginBox = ({ setUser, setIsAuthenticated }) => {
     console.log(data);
     setUser(data.user);
     localStorage.setItem("dataToken", data.token);
-    history.push("/private");
+    history.push("/mybook");
     setIsAuthenticated(true);
   };
   return (
       <div className="loginBoxContainer">
         <div className="loginWrapper">
-    <form onSubmit={formHandler}>
-      <input type="text" placeholder="Email" className="loginInput" onChange={(event) => setEmail(event.target.value)} />
-      <input type="text" placeholder="Password" className="loginInput" onChange={(event) => setPass(event.target.value)} />
-      <button>Login</button>
-    </form>
-    </div>
+        <form onSubmit={formHandler}>
+          <input type="text" placeholder="Email" className="loginInput" onChange={(event) => setEmail(event.target.value)} />
+          <input type="text" placeholder="Password" className="loginInput" onChange={(event) => setPass(event.target.value)} />
+          <button>Login</button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -44,3 +44,13 @@
   color: #fff;
   font-size: 100px;
 }
+
+.recordPage{
+  margin-top: 10vw;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1rem;
+}

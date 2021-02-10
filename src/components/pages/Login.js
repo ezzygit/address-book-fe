@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
 import LoginBox from '../LoginBox';
 
-function Login({ setUser }) {
+function Login({ setUser, setIsAuthenticated }) {
   return (
     <>
-      <LoginBox setUser={setUser} ></LoginBox>
+      <LoginBox setUser={setUser} setIsAuthenticated={setIsAuthenticated}></LoginBox>
       
     </>
   );
