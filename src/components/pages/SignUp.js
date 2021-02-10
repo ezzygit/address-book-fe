@@ -2,10 +2,10 @@ import React from 'react';
 import '../../App.css';
 import SignUpBox from '../SignUpBox';
 
-function SignUp() {
+function SignUp({ setUser }) {
   return (
     <>
-      <SignUpBox></SignUpBox>
+      <SignUpBox setUser={ setUser } ></SignUpBox>
       
     </>
   );

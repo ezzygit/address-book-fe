@@ -13,6 +13,6 @@ export const useAuth = async (setIsAuthenticated) => {
     setIsAuthenticated(false);
   } else {
     setIsAuthenticated(true);
-    history.push("/private");
+    history.push("/mybook");
   }
 };
