@@ -9,11 +9,10 @@ import SignUp from './components/pages/SignUp';
 import {useAuth} from './utils/useAuth'
 
 const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [user, setUser] = useState({})
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState({});
 
-  useAuth(setIsAuthenticated)
-
+  useAuth(setIsAuthenticated);
 
   return (
     <>
@@ -22,7 +21,7 @@ const App = () => {
         <Switch>
           <Route path='/' exact component={Home}  />
           
-          <Route path='/login' component={Login} setUser={setUser} />
+          <Route path='/login' component={Login} setUser={setUser} setIsAuthenticated={setIsAuthenticated} />
       
           <Route path='/sign-up' component={SignUp} setUser={setUser} />
 
