@@ -26,7 +26,7 @@ const App = () => {
       
           <Route path='/sign-up' component={SignUp} setUser={setUser} />
 
-          <Route exact path='/mybook' render = {() => isAuthenticated ?  <Lander user={user} /> : <Redirect to="/" />} />
+          <Route exact path='/mybook' render = {() => !isAuthenticated ?  <Lander user={user} /> : <Redirect to="/" />} />
           
           
         </Switch>
