@@ -95,4 +95,13 @@ h1.record  {
     margin-top: 21vw;
     padding: 2vw;
   }
+};
+
+.myprofile {
+  display: flex;
+  align-content: center;
+  height: 100vh;
+  padding: 25vw;
+  background-color: #adadad;
+
 }

@@ -22,7 +22,8 @@ const LoginBox = ({ setUser, setIsAuthenticated }) => {
     //console.log(data);
     setUser(data.user);
     localStorage.setItem("dataToken", data.token);
-    history.push("/mybook");
+    //to add new path for welcome page if authenticated
+    history.push("/myprofile");
     setIsAuthenticated(true);
   };
   return (

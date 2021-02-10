@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import {useAuth} from '../utils/useAuth';
 
-
-
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -26,10 +24,6 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
-
-  
-
-
 
   return (
     <>
@@ -69,6 +63,25 @@ function Navbar() {
               </Link>
             </li>
 
+            {/* <li className='nav-item'>
+              <Link
+                to='/logout'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Logout
+              </Link>
+            </li> */}
+
+            <li className='nav-item'>
+              <Link
+                to='/myprofile'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                My profile
+              </Link>
+            </li>
 
 
             <li>
