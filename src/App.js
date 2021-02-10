@@ -16,20 +16,20 @@ const App = () => {
 
   return (
     <>
-      <Router>
+      
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home}  />
           
-          <Route path='/login' component={Login} setUser={setUser} setIsAuthenticated={setIsAuthenticated} />
+          <Route path='/login' render={() => <Login setUser={setUser} setIsAuthenticated={setIsAuthenticated} />}  />
       
-          <Route path='/sign-up' component={SignUp} setUser={setUser} />
+          <Route path='/sign-up' render={() => <SignUp setUser={setUser} setIsAuthenticated={setIsAuthenticated} />} />
 
-          <Route exact path='/mybook' render = {() => !isAuthenticated ?  <Lander user={user} /> : <Redirect to="/" />} />
+          <Route exact path='/mybook' render = {() => isAuthenticated ?  <Lander user={user} /> : <Redirect to="/" />} />
           
           
         </Switch>
-      </Router>
+      
     </>
   );
 };

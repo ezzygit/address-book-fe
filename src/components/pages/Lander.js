@@ -54,7 +54,7 @@ const Lander = () => {
      </div>
      <div className="map">
         {posts.map((post, index) => {
-            return <Record post={post} index={index} />
+            return <Record post={post} key={index} />
         })}
      </div>
       
