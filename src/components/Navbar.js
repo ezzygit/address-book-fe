@@ -48,6 +48,16 @@ function Navbar() {
                 Home
               </Link>
             </li>
+
+            <li className='nav-item'>
+              <Link
+                to='/mybook'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Records
+              </Link>
+            </li>
         
             <li className='nav-item'>
               <Link
@@ -58,6 +68,8 @@ function Navbar() {
                 Login
               </Link>
             </li>
+
+
 
             <li>
               <Link
