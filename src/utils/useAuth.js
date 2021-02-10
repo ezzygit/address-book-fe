@@ -8,8 +8,8 @@ export const useAuth = async (setIsAuthenticated) => {
   });
 
   const data = await response.json();
-  console.log(`${localStorage.getItem("dataToken")}`);
-  console.log(data);
+  //console.log(`${localStorage.getItem("dataToken")}`);
+  //console.log(data);
   
   if (response.status === 401) {
     setIsAuthenticated(false);
