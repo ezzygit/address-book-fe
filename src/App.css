@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  
   /* width: 100vw;
   height: 100vh; */
 }
@@ -46,11 +47,52 @@
 }
 
 .recordPage{
-  margin-top: 10vw;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   font-size: 1rem;
+  background-color: #adadad;
+}
+
+.newrecord {
+  margin: 10vw 0 1vw 0;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+h1.record  {
+  text-align: left;
+}
+
+@media screen and (max-width: 850px) {
+  .newrecord {
+    margin-top: 15vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .newrecord {
+    margin-top: 17vw;
+    padding: 2vw;
+  }
+}
+@media screen and (max-width: 435px) {
+  .newrecord {
+    margin-top: 21vw;
+    padding: 2vw;
+  }
 }

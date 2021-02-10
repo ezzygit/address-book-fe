@@ -24,7 +24,7 @@
     transition: all 0.3s ease-out;
 }
 
-.btn-m {
+.btn-m, .btn-mob {
     padding: 8px 20px;
     font-size: 20px;
 }
