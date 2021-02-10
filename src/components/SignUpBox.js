@@ -5,6 +5,8 @@ const Signup = ({ setUser }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  
+
 
   const formHandler = async (event) => {
     event.preventDefault();
@@ -23,6 +25,7 @@ const Signup = ({ setUser }) => {
     setUser(data.savedUser);
     localStorage.setItem("dataToken", data.token);
   };
+
 
   return (
       <div className="signUpBoxContainer">

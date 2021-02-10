@@ -19,7 +19,7 @@ const LoginBox = ({ setUser, setIsAuthenticated }) => {
       }),
     });
     const data = await response.json();
-    console.log(data);
+    //console.log(data);
     setUser(data.user);
     localStorage.setItem("dataToken", data.token);
     history.push("/mybook");
@@ -30,7 +30,7 @@ const LoginBox = ({ setUser, setIsAuthenticated }) => {
         <div className="loginWrapper">
         <form onSubmit={formHandler}>
           <input type="text" placeholder="Email" className="loginInput" onChange={(event) => setEmail(event.target.value)} />
-          <input type="text" placeholder="Password" className="loginInput" onChange={(event) => setPass(event.target.value)} />
+          <input type="password" placeholder="Password" className="loginInput" onChange={(event) => setPass(event.target.value)} />
           <button>Login</button>
         </form>
       </div>

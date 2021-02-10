@@ -3,7 +3,7 @@ import '../../App.css';
 // import Main from '../Main';
 import Record from '../Record'
 
-const Lander = () => {
+const Lander = ({user}) => {
     const [posts, setPosts] = useState([]);
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -54,7 +54,7 @@ const Lander = () => {
      </div>
      <div className="map">
         {posts.map((post, index) => {
-            return <Record post={post} index={index} />
+            return <Record post={post} key={index} />
         })}
      </div>
       
