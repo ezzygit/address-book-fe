@@ -12,21 +12,29 @@ function Main() {
       <h1>THE DIGITALISATION OF THE ADDRESS BOOK</h1>
       <p>What are you waiting for?</p>
       <div className='main-btns'>
+        {/* <Button
+          className='btns'
+          buttonStyle='btn-o'
+          buttonSize='btn-l'
+        >
+          DISCOVER DABOOK
+        </Button> */}
         <Button
           className='btns'
           buttonStyle='btn-o'
           buttonSize='btn-l'
         >
-          DISCOVER THE POSSIBILITIES
+          JOIN THE REVOLUTION <i className='fa fa-arrow-right' />
         </Button>
-        <Button
+        
+        {/* <Button
           className='btns'
           buttonStyle='btn-p'
           buttonSize='btn-l'
           onClick={console.log('hey')}
         >
           JOIN THE REVOLUTION <i className='far fa-play-circle' />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
