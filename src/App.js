@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import Lander from './components/pages/Lander';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Switch, Route, Redirect } from 'react-router-dom';
 import Login from './components/pages/Login';
 import SignUp from './components/pages/SignUp';
 import {useAuth} from './utils/useAuth'
