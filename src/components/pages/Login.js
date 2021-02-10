@@ -2,10 +2,10 @@ import React from 'react';
 import '../../App.css';
 import LoginBox from '../LoginBox';
 
-function Login() {
+function Login({ setUser }) {
   return (
     <>
-      <LoginBox></LoginBox>
+      <LoginBox setUser={setUser} ></LoginBox>
       
     </>
   );
